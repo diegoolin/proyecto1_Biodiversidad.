@@ -5,6 +5,9 @@ Created on Mon Sep  5 11:56:56 2022
 @author: Usuario
 """
 import random
+plantas=0
+bacterias=0
+agua=0
 
 A1=random.randint(1,4)
 if A1==3 or A1==4:
@@ -162,4 +165,196 @@ else:
 print("/",A1,"/",B1,"/",C1,"/",D1,"/")
 print("/",A2,"/",B2,"/",C2,"/",D2,"/")
 print("/",A3,"/",B3,"/",C3,"/",D3,"/")
-print("/",A4,"/",B4,"/",C4,"/",D4,"/")                                      
+print("/",A4,"/",B4,"/",C4,"/",D4,"/")
+print("")
+                                    
+if A1=="P":
+    plantas=plantas+1
+else:
+    if A1=="A":
+        agua=agua+1
+    else: 
+        if A1=="B":
+           bacterias=bacterias+1
+           
+if A2=="P":
+    plantas=plantas+1
+else:
+    if A2=="A":
+        agua=agua+1
+    else: 
+        if A2=="B":
+           bacterias=bacterias+1
+           
+if A3=="P":
+    plantas=plantas+1
+else:
+    if A3=="A":
+        agua=agua+1
+    else: 
+        if A3=="B":
+           bacterias=bacterias+1
+
+if A4=="P":
+    plantas=plantas+1
+else:
+    if A4=="A":
+        agua=agua+1
+    else: 
+        if A4=="B":
+           bacterias=bacterias+1
+
+if B1=="P":
+    plantas=plantas+1
+else:
+    if B1=="A":
+        agua=agua+1
+    else: 
+        if B1=="B":
+           bacterias=bacterias+1
+           
+if B2=="P":
+    plantas=plantas+1
+else:
+    if B2=="A":
+        agua=agua+1
+    else: 
+        if B2=="B":
+           bacterias=bacterias+1
+           
+if B3=="P":
+    plantas=plantas+1
+else:
+    if B3=="A":
+        agua=agua+1
+    else: 
+        if B3=="B":
+           bacterias=bacterias+1           
+           
+if B4=="P":
+    plantas=plantas+1
+else:
+    if B4=="A":
+        agua=agua+1
+    else: 
+        if B4=="B":
+           bacterias=bacterias+1           
+           
+if C1=="P":
+    plantas=plantas+1
+else:
+    if C1=="A":
+        agua=agua+1
+    else: 
+        if C1=="B":
+           bacterias=bacterias+1 
+           
+if C2=="P":
+    plantas=plantas+1
+else:
+    if C2=="A":
+        agua=agua+1
+    else: 
+        if C2=="B":
+           bacterias=bacterias+1
+          
+if C3=="P":
+    plantas=plantas+1
+else:
+    if C3=="A":
+        agua=agua+1
+    else: 
+        if C3=="B":
+           bacterias=bacterias+1
+
+if C4=="P":
+    plantas=plantas+1
+else:
+    if C4=="A":
+        agua=agua+1
+    else: 
+        if C4=="B":
+           bacterias=bacterias+1 
+
+if D1=="P":
+    plantas=plantas+1
+else:
+    if D1=="A":
+        agua=agua+1
+    else: 
+        if D1=="B":
+           bacterias=bacterias+1
+
+if D2=="P":
+    plantas=plantas+1
+else:
+    if D2=="A":
+        agua=agua+1
+    else: 
+        if D2=="B":
+           bacterias=bacterias+1
+
+if D3=="P":
+    plantas=plantas+1
+else:
+    if D3=="A":
+        agua=agua+1
+    else: 
+        if D3=="B":
+           bacterias=bacterias+1
+
+if D4=="P":
+    plantas=plantas+1
+else:
+    if D4=="A":
+        agua=agua+1
+    else: 
+        if D4=="B":
+           bacterias=bacterias+1             
+print("El total de plantas es:",plantas)
+print("El total de bacterias es:",bacterias)
+print("El total de agua es:",agua)
+
+print("")
+
+print("El porcentaje de plantas es de",(plantas*100)/16,"%")
+print("El porcentaje de bacterias es de",(bacterias*100)/16,"%")
+print("El porcentaje de agua es de",(agua*100)/16,"%")
+
+print("")
+
+if plantas>bacterias>agua:
+    print("El elemento con mayor ocurrencia son las plantas")
+    print("El elemento con menor ocurrencia es el agua")
+else: 
+    if plantas>agua>bacterias:
+        print("El elemento con mayor ocurrencia son las plantas")
+        print("El elemento con menor ocurrencia son las bacterias")
+    else:
+        if bacterias>plantas>agua:
+             print("El elemento con mayor ocurrencia son las bacterias")
+             print("El elemento con menor ocurrencia es el agua")
+        else:
+            if bacterias>agua>plantas:
+                print("El elemento con mayor ocurrencia son las bacterias")
+                print("El elemento con menor ocurrencia son las plantas")
+            else:
+                if agua>bacterias>plantas:
+                    print("El elemento con mayor ocurrencia es el agua")
+                    print("El elemento con menor ocurrencia son las plantas")
+                else:
+                    if agua>plantas>bacterias:
+                        print("El elemento con mayor ocurrencia es el agua")
+                        print("El elemento con menor ocurrencia son las plantas")
+                    else:
+                           if plantas==bacterias:
+                              print("Existe un empate entre los elementos plantas y bacterias")
+                           else:
+                               if plantas==agua:
+                                   print("Existe un empate entre los elementos plantas y agua")
+                               else:
+                                   if bacterias==agua and agua==plantas:
+                                       print("Existe un empate entre los tres elementos")
+                                   else:
+                                       if bacterias==agua:
+                                           print("Existe un empate entre las bacterias y las aguas")
