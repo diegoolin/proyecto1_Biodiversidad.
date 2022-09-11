@@ -347,14 +347,25 @@ else:
                         print("El elemento con mayor ocurrencia es el agua")
                         print("El elemento con menor ocurrencia son las plantas")
                     else:
-                           if plantas==bacterias:
-                              print("Existe un empate entre los elementos plantas y bacterias")
-                           else:
-                               if plantas==agua:
-                                   print("Existe un empate entre los elementos plantas y agua")
+                           if agua>plantas==bacterias:
+                              print("El elemento con mayor ocurrencia es el agua y existe un empate entre los elementos plantas y bacterias")
+                           else: 
+                               if agua<plantas==bacterias:
+                                  print("El elemento con menor ocurrencia es el agua y existe un empate entre los elementos plantas y bacterias")
                                else:
-                                   if bacterias==agua and agua==plantas:
-                                       print("Existe un empate entre los tres elementos")
+                                   if plantas>bacterias==agua:
+                                       print("El elemento con mayor ocurrencia son las plantas y existe un empate entre los elementos agua y bacterias")
                                    else:
-                                       if bacterias==agua:
-                                           print("Existe un empate entre las bacterias y las aguas")
+                                       if plantas<bacterias==agua:
+                                           print("El elemento con menor ocurrencia son las plantas y existe un empate entre los elementos agua y bacterias")
+                                       else:
+                                           if bacterias>agua==plantas:
+                                               print("El elemento con mayor ocurrencia son las bacterias y existe un empate entre los elementos agua y plantas")
+                                           else:
+                                               if bacterias<agua==plantas:
+                                                   print("El elemento con menor ocurrencia son las bacterias y existe un empate entre los elementos agua y plantas")
+                                               else:
+                                                   if bacterias==agua and plantas:
+                                                       print("Existe un empate entre todos los elementos")
+                                           
+                            
