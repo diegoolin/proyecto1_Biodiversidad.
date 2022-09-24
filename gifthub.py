@@ -381,15 +381,15 @@ else:
             if B2=="P" and B3=="P" and B1=="P" and C3=="P" and C1=="P" and D1=="P" and D2=="P" and D3=="P" and C2=="A":
                 print("Existe una relacion Agua-Riesgo-Escasez")
             else:
-                if A2=="B" and B2=="B" and A3=="B" and B4=="B" and A4=="B" and C2=="B" and C3=="B" and C4=="B" and B2=="P":
+                if A2=="B" and B2=="B" and A3=="B" and B4=="B" and A4=="B" and C2=="B" and C3=="B" and C4=="B" and B3=="P":
                     print("Existe una relacion planta bajo ataque")
                 else:
-                    if A2=="P" and B2=="P" and A3=="P" and B4=="P" and A4=="P" and C2=="P" and C3=="P" and C4=="P" and B2=="A":
+                    if A2=="P" and B2=="P" and A3=="P" and B4=="P" and A4=="P" and C2=="P" and C3=="P" and C4=="P" and B3=="A":
                         print("Existe una relacion Agua-Riesgo-Escasez")
                     else:
-                        if B2=="B" and B3=="B" and B4=="B" and C2=="B" and C4=="B" and D2=="B" and D3=="B" and D4=="B" and B2=="P":
+                        if B2=="B" and B3=="B" and B4=="B" and C2=="B" and C4=="B" and D2=="B" and D3=="B" and D4=="B" and C3=="P":
                             print("Existe una relacion planta bajo ataque")
                         else:
-                            if B2=="P" and B3=="P" and B4=="P" and C2=="P" and C4=="P" and D2=="P" and D3=="P" and D4=="P" and B2=="A":
+                            if B2=="P" and B3=="P" and B4=="P" and C2=="P" and C4=="P" and D2=="P" and D3=="P" and D4=="P" and C3=="A":
                                 print("Existe una relacion Agua-Riesgo-Escasez")
                             
