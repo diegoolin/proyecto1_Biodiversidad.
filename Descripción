@@ -1,0 +1,35 @@
+crear un programa en python
+
+utilizando la funcion randint de python generar un estado inicial del cuadrante
+
+imprimir este cuadrante inicial para que nos queden los 16 sub-cuadrantes 
+
+------------------
+| A1 | B1 | C1 | D1 |
+------------------
+| A2 | B2 | C2 | D2 |
+------------------
+| A3 | B3 | C3 | D3 |
+------------------
+| A4 | B4 | C4 | D4 |
+------------------
+
+luego representar los estados que van a poseer los subcuadrantes en este caso los representaremos por la inicial de cada estado P=planta, B=bacteria y A=agua
+
+definir algunos datos que nos muestra el desafio como que en el estado inicial las plantas tienen las mismas probabilidades de ocurrencias que el agua y el de las bacterias es el doble que el de las plantas osea que tambien sera el doble el nivel de ocurrencia que el agua
+
+crear las variables que necesitamos en este caso 16 donde se conozca las probabilidades de cada uno de los sub-cuadrantes a traves del estudio realizado
+
+necesitamos saber que la probabilidad de que el cuadrante sea planta o agua es la misma y el de las bacterias sea el doble por lo que las plantas y agua equivaldrian 25% cada uno luego las bacterias tienen el doble de posibilidades de ocurrencia osea un 50%
+
+esto lo desarrollaremos a traves del azar donde definiremos cada elemento con un numero
+
+identicaremos 4 numeros como el azar donde el 0 sera las plantas, 1 seran el agua, el 2 equivaldra a las bacterias, como las bacterias poseen el doble de probabilidades que las plantas y el agua se incluira otro numero que sera el 3 que tambien equivaldra a las bacterias y asi cumplir con las probabilidades de ocurrencia de cada elemento
+
+esta funcion azar la implementaremos en cada sub-cuadrante
+
+en caso de que en la funcion azar salgan la misma cantidad de veces un mismo numero el programa indicara los elementos que tengan esa misma probabilidad
+
+para identificar las relaciones determinadas como Relación Planta-Bajo-Ataque y Relación Agua-Riesgo-Escasez tendremos que conocer cuales son los sub-cuadrantes que pueden cumplir con dichas relaciones que en este caso serian los cuadrantes B2, B3, C2 y C3 estos son los cuadrantes que poseen ocho elementos adyacentes para que puedan cumplirse dichas relaciones.
+
+en caso que exista alguna relación el programa iluminara de un color distinto dependiendo el cuadrante que cumpla con dicha relación
